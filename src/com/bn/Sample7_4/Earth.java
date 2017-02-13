@@ -157,9 +157,9 @@ public class Earth  {
          GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
          GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texId);    
          GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
-         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texIdNight);            
+//         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texIdNight);            
          GLES20.glUniform1i(uDayTexHandle, 0);
-         GLES20.glUniform1i(uNightTexHandle, 1);          
+//         GLES20.glUniform1i(uNightTexHandle, 1);          
          //»æÖÆÈý½ÇÐÎ
          GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, vCount); 
     }
