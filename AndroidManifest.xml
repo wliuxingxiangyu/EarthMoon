@@ -21,9 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.bn.Sample7_4.MySurfaceActivity"></activity>
-        <activity android:name="com.hz.downloadclient.AIDLDownloadClientActivity"></activity>
+        <activity android:name="com.bn.Sample7_4.MySurfaceActivity" >
+        </activity>
+        <activity android:name="com.hz.downloadclient.AIDLDownloadClientActivity" >
+        </activity>
+
+        <service android:name="com.hz.aidl.DownloadService" >
+            <intent-filter>
+                <action android:name="com.hz.process.aidl.DownloadService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
