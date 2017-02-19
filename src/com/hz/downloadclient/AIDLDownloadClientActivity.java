@@ -14,7 +14,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-
+/**
+ * 客户端的activity
+ * -通过aidl->
+ * -->服务端的<link>IDownloadService</link>
+ * -->服务端的<link>DownloadService</link>
+ * -->服务端的<link>ServiceBinder</link>.
+ */
 public class AIDLDownloadClientActivity extends Activity implements
 		View.OnClickListener {
 	private final static String TAG = "AIDLDownloadClientActivity";

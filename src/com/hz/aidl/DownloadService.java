@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
-
+/**
+ * 客户端的service，用于调客户端的ServiceBinder,
+ */
 public class DownloadService extends Service{
 	private final static String TAG="DownloadService";
 	private ServiceBinder serviceBinder = new ServiceBinder();
@@ -14,15 +16,6 @@ public class DownloadService extends Service{
 	@Override
 	public IBinder onBind(Intent intent) {
 		return serviceBinder;
-	}
-
-	public class  ServiceBinder extends IDownloadService.Stub{
-
-		@Override
-		public void download(String path) throws RemoteException {
-			Log.i(TAG,"ServiceBinder---"+path);
-		}
-		
 	}
 	
 	@Override
